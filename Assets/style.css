@@ -341,7 +341,7 @@ a span {
     right: auto;
   }
   .face {
-    box-shadow: inset -4px -4px 3px #84eed5, inset 4px 0 3px #84eed5;
+    box-shadow: inset -3px -3px 1px #84eed5, inset 3px 0 1px #84eed5;
     background-size: cover;
     width: 100%;
   }
@@ -396,7 +396,7 @@ a span {
     transform: rotate(4deg) translateY(-50%);
   }
   .face {
-    box-shadow: inset -4px -4px 3px #84eed5, inset 4px 0 3px #84eed5;
+    box-shadow: inset -3px -3px 1px #84eed5, inset 3px 0 1px #84eed5;
     background-size: contain;
     width: 100%;
     height: auto;
