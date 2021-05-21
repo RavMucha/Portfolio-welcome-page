@@ -101,6 +101,7 @@ body {
 }
 header {
   margin: 0;
+  background-color: #84eed5;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
