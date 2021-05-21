@@ -128,7 +128,7 @@ header {
 
 .card h1 {
   font-size: 70px;
-  -webkit-text-stroke: none;
+  -webkit-text-stroke: 0;
 }
 
 .buttonz .btn {
@@ -242,9 +242,29 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 1101px) and (max-width: 1300px) {
   .card {
     width: 48vw;
+  }
+  .card h1 {
+    -webkit-text-stroke: 0;
+    font-size: 50px;
+  }
+  .buttonz .btn {
+    padding: 5px 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+  }
+
+  .buttonz a {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  h3 {
+    letter-spacing: 2px;
+    font-size: 28px;
   }
   header {
     right: 100px;
@@ -256,27 +276,48 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (min-width: 1051px) and (max-width: 1100px) {
   .card {
     width: 45vw;
+  }
+  .card h1 {
+    -webkit-text-stroke: 0;
+    font-size: 40px;
+  }
+  .buttonz .btn {
+    padding: 5px 20px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+  }
+
+  .buttonz a {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  h3 {
+    letter-spacing: 2px;
+    font-size: 22px;
   }
   header {
     right: 60px;
   }
   .web h1,
   .UI h1 {
-    font-size: 80px;
+    font-size: 60px;
     right: 60px;
   }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (min-width: 801px) and (max-width: 1050px) {
   h1 {
     line-height: 90%;
   }
   .card {
     position: relative;
     width: 100vw;
+    height: 25vh;
     border-radius: 0;
   }
   header {
@@ -308,6 +349,12 @@ a:hover {
   h1 {
     line-height: 80%;
   }
+  .card {
+    position: relative;
+    width: 100vw;
+    height: 25vh;
+    border-radius: 0;
+  }
   .card h1 {
     font-size: 50px;
   }
@@ -332,7 +379,7 @@ a:hover {
   .UI h1 {
     font-size: 40px;
     right: auto;
-    transform: scale(1.2) rotate(40deg) translateY(20px);
+    transform: rotate(20deg) translateY(50px);
   }
   .face {
     background-size: contain;
