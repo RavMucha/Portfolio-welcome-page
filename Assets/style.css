@@ -392,8 +392,31 @@ a span {
     right: auto;
     position: absolute;
     top: 50%;
+    animation: cradle 30s infinite;
     -ms-transform: rotate(4deg) translateY(-50%);
     transform: rotate(4deg) translateY(-50%);
+  }
+  @keyframes cradle {
+    0% {
+      transform: rotate(4deg) translateY(-50%);
+    }
+    50% {
+      transform: rotate(-4deg) translateY(-55%);
+    }
+    100% {
+      transform: rotate(4deg) translateY(-50%);
+    }
+  }
+  @-webkit-keyframes cradle {
+    0% {
+      transform: rotate(4deg) translateY(-50%);
+    }
+    50% {
+      transform: rotate(-4deg) translateY(-55%);
+    }
+    100% {
+      transform: rotate(4deg) translateY(-50%);
+    }
   }
   .face {
     box-shadow: inset -3px -3px 1px #84eed5, inset 3px 0 1px #84eed5;
