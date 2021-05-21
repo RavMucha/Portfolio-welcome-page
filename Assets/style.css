@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Reem Kufi", Roboto, monospace;
+  color: #84eed5;
+  background-color: #00372a;
+  animation: hue 60s infinite;
+}
+
+.main-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr 1fr;
+  grid-template-rows: 0.9fr 1.2fr 0.9fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "face face face UI"
+    "face face face card"
+    "face face face web";
+}
+
+.UI {
+  grid-area: UI;
+}
+.face {
+  grid-area: face;
+}
+.web {
+  grid-area: web;
+}
+.card {
+  grid-area: card;
+}
+
+.face {
+  background-image: url(./face.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  width: 70vw;
+}
+
+@-webkit-keyframes hue {
+  0% {
+    filter: invert(0%);
+    background-color: #00372a;
+  }
+  20% {
+    filter: invert(0%);
+    background-color: #00372a;
+  }
+  25% {
+    filter: invert(90%);
+    background-color: #ffffff;
+  }
+  75% {
+    filter: invert(90%);
+    background-color: #ffffff;
+  }
+  80% {
+    filter: invert(0%);
+    background-color: #00372a;
+  }
+  100% {
+    filter: invert(0%);
+    background-color: #00372a;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  font-family: "Poppins", Roboto, monospace;
+  border-radius: 44px 0 0 44px;
+  border-right: 0;
+  width: 55vw;
+  background-color: #84eed5;
+}
+
+.buttonz {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card h1 {
+  font-size: 105px;
+}
+
+.buttonz button {
+  border: 2px solid #00372a;
+  background-color: #84eed5;
+  color: #00372a;
+  padding: 5px 40px;
+  font-size: 40px;
+  letter-spacing: 3px;
+  border-radius: 10px;
+}
+
+button:hover {
+  -webkit-text-stroke: 1px #84eed5;
+  background-color: #00372a;
+  transition: 0.2s linear;
+}
+
+.buttonz a {
+  background-color: #84eed5;
+  color: #00372a;
+  padding: 5px 10px;
+  font-size: 60px;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 62px;
+  text-align: center;
+  color: #00372a;
+  margin: 0;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 220px;
+  line-height: 50%;
+  align-items: center;
+  text-align: center;
+  color: #00372a;
+  -webkit-text-stroke: 2px #84eed5;
+  margin-bottom: 0;
+}
+
+a:hover {
+  color: #84eed5;
+  -webkit-text-stroke: 2px #00372a;
+  transition: 0.2s linear;
+}
+
+header {
+  margin: 40px 200px;
+  padding: 0;
+}
+
+.web h1,
+.UI h1 {
+  font-size: 140px;
+  transform: translate(20px, 10%);
+  animation: hueFont 60s infinite;
+}
+
+@-webkit-keyframes hueFont {
+  0% {
+    color: #00372a;
+  }
+  15% {
+    color: #84eed5;
+  }
+  25% {
+    color: #84eed5;
+  }
+  75% {
+    color: #84eed5;
+  }
+  80% {
+    color: #00372a;
+  }
+  100% {
+    color: #00372a;
+  }
+}
