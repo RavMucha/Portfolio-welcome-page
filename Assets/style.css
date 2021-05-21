@@ -164,6 +164,10 @@ a:hover {
   -webkit-text-stroke: 2px #00372a;
   transition: 0.2s linear;
 }
+a span {
+font-weight: 900;
+font-size: 0.8em;
+}
 .web,
 .UI {
   position: relative;
