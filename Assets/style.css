@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
-
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   display: flex;
@@ -11,19 +11,14 @@ body {
   background-color: #00372a;
   animation: hue 60s infinite;
 }
-
 .main-container {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 0.5fr 1fr;
   grid-template-rows: 0.9fr 1.2fr 0.9fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "face face face UI"
-    "face face face card"
-    "face face face web";
+  gap: 0 0;
+  grid-template-areas: "face face face UI" "face face face card" "face face face web";
 }
-
 .UI {
   grid-area: UI;
 }
@@ -33,7 +28,6 @@ body {
 .card {
   grid-area: card;
 }
-
 .face {
   grid-area: face;
   background-image: url(./face.svg);
@@ -42,7 +36,6 @@ body {
   height: 100vh;
   width: 70vw;
 }
-
 @keyframes hue {
   0% {
     filter: invert(0%);
@@ -69,7 +62,6 @@ body {
     background-color: #00372a;
   }
 }
-
 @-webkit-keyframes hue {
   0% {
     filter: invert(0%);
@@ -96,20 +88,17 @@ body {
     background-color: #00372a;
   }
 }
-
 .container {
   display: flex;
   justify-content: center;
   vertical-align: middle;
 }
-
 .card {
   font-family: "Poppins", Roboto, monospace;
   border-radius: 44px 0 0 44px;
   width: 55vw;
   background-color: #84eed5;
 }
-
 header {
   margin: 0;
   position: absolute;
@@ -117,7 +106,6 @@ header {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 .buttonz {
   display: flex;
   flex-direction: row;
@@ -125,12 +113,10 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
 .card h1 {
   font-size: 70px;
   -webkit-text-stroke: 0;
 }
-
 .buttonz .btn {
   border: 2px solid #00372a;
   background-color: #84eed5;
@@ -140,13 +126,11 @@ header {
   letter-spacing: 3px;
   border-radius: 10px;
 }
-
 .btn:hover {
   -webkit-text-stroke: 1px #84eed5;
   background-color: #00372a;
   transition: 0.2s linear;
 }
-
 .buttonz a {
   background-color: #84eed5;
   color: #00372a;
@@ -155,7 +139,6 @@ header {
   letter-spacing: 3px;
   text-decoration: none;
 }
-
 h3 {
   font-style: normal;
   font-weight: bold;
@@ -165,7 +148,6 @@ h3 {
   color: #00372a;
   margin: 0;
 }
-
 h1 {
   font-style: normal;
   font-weight: normal;
@@ -177,18 +159,15 @@ h1 {
   -webkit-text-stroke: 2px #84eed5;
   margin: 0;
 }
-
 a:hover {
   color: #84eed5;
   -webkit-text-stroke: 2px #00372a;
   transition: 0.2s linear;
 }
-
 .web,
 .UI {
   position: relative;
 }
-
 .web h1,
 .UI h1 {
   font-size: 120px;
@@ -199,7 +178,6 @@ a:hover {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 @keyframes hueFont {
   0% {
     color: #00372a;
@@ -220,7 +198,6 @@ a:hover {
     color: #00372a;
   }
 }
-
 @-webkit-keyframes hueFont {
   0% {
     color: #00372a;
@@ -241,7 +218,6 @@ a:hover {
     color: #00372a;
   }
 }
-
 @media screen and (min-width: 1101px) and (max-width: 1300px) {
   .card {
     width: 48vw;
@@ -256,12 +232,10 @@ a:hover {
     letter-spacing: 2px;
     border-radius: 5px;
   }
-
   .buttonz a {
     font-size: 20px;
     letter-spacing: 2px;
   }
-
   h3 {
     letter-spacing: 2px;
     font-size: 28px;
@@ -275,7 +249,6 @@ a:hover {
     right: 100px;
   }
 }
-
 @media screen and (min-width: 1051px) and (max-width: 1100px) {
   .card {
     width: 45vw;
@@ -290,12 +263,10 @@ a:hover {
     letter-spacing: 2px;
     border-radius: 5px;
   }
-
   .buttonz a {
     font-size: 16px;
     letter-spacing: 2px;
   }
-
   h3 {
     letter-spacing: 2px;
     font-size: 22px;
@@ -309,14 +280,32 @@ a:hover {
     right: 60px;
   }
 }
-
 @media screen and (min-width: 801px) and (max-width: 1050px) {
   h1 {
     line-height: 90%;
   }
+  .card h1 {
+    -webkit-text-stroke: 0;
+    letter-spacing: 2px;
+    font-size: 50px;
+  }
+  h3 {
+    letter-spacing: 2px;
+    font-size: 30px;
+  }
+  .buttonz .btn {
+    padding: 5px 20px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+  }
+  .buttonz a {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
   .card {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 25vh;
     border-radius: 0;
   }
@@ -330,47 +319,40 @@ a:hover {
   }
   .face {
     background-size: cover;
-    width: 100vw;
+    width: 100%;
   }
   .main-container {
     height: 150vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr 0.5fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "card card"
-      "UI web"
-      "face face";
+    gap: 0 0;
+    grid-template-areas: "card card" "UI web" "face face";
   }
 }
-
 @media screen and (max-width: 800px) {
   h1 {
     line-height: 80%;
   }
   .card {
     position: relative;
-    width: 100vw;
+    width: 100%;;
     height: 25vh;
     border-radius: 0;
   }
   .card h1 {
     font-size: 50px;
   }
-
   .buttonz .btn {
     padding: 5px 30px;
     font-size: 16px;
     letter-spacing: 2px;
     border-radius: 5px;
   }
-
   .buttonz a {
     font-size: 20px;
     letter-spacing: 2px;
   }
-
   h3 {
     letter-spacing: 2px;
     font-size: 28px;
@@ -379,22 +361,20 @@ a:hover {
   .UI h1 {
     font-size: 40px;
     right: auto;
-    transform: rotate(20deg) translateY(50px);
+    transform: rotate(5deg) translateY(20px);
   }
   .face {
     background-size: contain;
-    width: 100vw;
+    width: 100%;
     height: auto;
+    border-bottom: 2px solid #84eed5;
     aspect-ratio: 1 / 1;
   }
   .main-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "card card"
-      "face face"
-      "UI web";
+    gap: 0 0;
+    grid-template-areas: "card card" "face face" "UI web";
   }
 }
