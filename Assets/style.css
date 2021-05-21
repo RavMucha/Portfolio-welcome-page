@@ -400,7 +400,6 @@ a span {
     background-size: contain;
     width: 100%;
     height: auto;
-    border-bottom: 2px solid #84eed5;
     aspect-ratio: 1 / 1;
   }
   .main-container {
