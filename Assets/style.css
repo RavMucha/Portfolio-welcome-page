@@ -27,9 +27,6 @@ body {
 .UI {
   grid-area: UI;
 }
-.face {
-  grid-area: face;
-}
 .web {
   grid-area: web;
 }
@@ -38,11 +35,39 @@ body {
 }
 
 .face {
+  grid-area: face;
   background-image: url(./face.svg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 100vh;
   width: 70vw;
+}
+
+@keyframes hue {
+  0% {
+    filter: invert(0%);
+    background-color: #00372a;
+  }
+  20% {
+    filter: invert(0%);
+    background-color: #00372a;
+  }
+  25% {
+    filter: invert(90%);
+    background-color: #ffffff;
+  }
+  75% {
+    filter: invert(90%);
+    background-color: #ffffff;
+  }
+  80% {
+    filter: invert(0%);
+    background-color: #00372a;
+  }
+  100% {
+    filter: invert(0%);
+    background-color: #00372a;
+  }
 }
 
 @-webkit-keyframes hue {
@@ -74,19 +99,23 @@ body {
 
 .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   vertical-align: middle;
-  margin: 0;
-  padding: 0;
 }
 
 .card {
   font-family: "Poppins", Roboto, monospace;
   border-radius: 44px 0 0 44px;
-  border-right: 0;
   width: 55vw;
   background-color: #84eed5;
+}
+
+header {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .buttonz {
@@ -146,7 +175,7 @@ h1 {
   text-align: center;
   color: #00372a;
   -webkit-text-stroke: 2px #84eed5;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 a:hover {
@@ -155,16 +184,41 @@ a:hover {
   transition: 0.2s linear;
 }
 
-header {
-  margin: 30px 150px;
-  padding: 0;
+.web,
+.UI {
+  position: relative;
 }
 
 .web h1,
 .UI h1 {
   font-size: 120px;
-  transform: translate(20px, 10%);
   animation: hueFont 60s infinite;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@keyframes hueFont {
+  0% {
+    color: #00372a;
+  }
+  15% {
+    color: #84eed5;
+  }
+  25% {
+    color: #84eed5;
+  }
+  75% {
+    color: #84eed5;
+  }
+  80% {
+    color: #00372a;
+  }
+  100% {
+    color: #00372a;
+  }
 }
 
 @-webkit-keyframes hueFont {
@@ -185,5 +239,115 @@ header {
   }
   100% {
     color: #00372a;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .card {
+    width: 48vw;
+  }
+  header {
+    right: 100px;
+  }
+  .web h1,
+  .UI h1 {
+    font-size: 100px;
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .card {
+    width: 45vw;
+  }
+  header {
+    right: 60px;
+  }
+  .web h1,
+  .UI h1 {
+    font-size: 80px;
+    right: 60px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  h1 {
+    line-height: 90%;
+  }
+  .card {
+    position: relative;
+    width: 100vw;
+    border-radius: 0;
+  }
+  header {
+    right: auto;
+  }
+  .web h1,
+  .UI h1 {
+    font-size: 80px;
+    right: auto;
+  }
+  .face {
+    background-size: cover;
+    width: 100vw;
+  }
+  .main-container {
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "card card"
+      "UI web"
+      "face face";
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    line-height: 80%;
+  }
+  .card h1 {
+    font-size: 50px;
+  }
+
+  .buttonz .btn {
+    padding: 5px 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+  }
+
+  .buttonz a {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  h3 {
+    letter-spacing: 2px;
+    font-size: 28px;
+  }
+  .web h1,
+  .UI h1 {
+    font-size: 40px;
+    right: auto;
+    transform: scale(1.2) rotate(40deg) translateY(20px);
+  }
+  .face {
+    background-size: contain;
+    width: 100vw;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "card card"
+      "face face"
+      "UI web";
   }
 }
