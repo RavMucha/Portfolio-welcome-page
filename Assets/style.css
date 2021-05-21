@@ -102,7 +102,7 @@ body {
   -webkit-text-stroke: none;
 }
 
-.buttonz button {
+.buttonz .btn {
   border: 2px solid #00372a;
   background-color: #84eed5;
   color: #00372a;
@@ -112,7 +112,7 @@ body {
   border-radius: 10px;
 }
 
-button:hover {
+.btn:hover {
   -webkit-text-stroke: 1px #84eed5;
   background-color: #00372a;
   transition: 0.2s linear;
