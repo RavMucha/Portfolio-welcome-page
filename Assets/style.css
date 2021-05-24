@@ -355,6 +355,14 @@ a span {
   }
 }
 @media screen and (max-width: 800px) {
+  .main-container {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    gap: 0 0;
+    grid-template-areas: "card card" "face face" "UI web";
+  }
   h1 {
     line-height: 80%;
   }
@@ -425,11 +433,28 @@ a span {
     height: auto;
     aspect-ratio: 1 / 1;
   }
-  .main-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0 0;
-    grid-template-areas: "card card" "face face" "UI web";
+}
+
+@media screen and (max-height: 530px) {
+  .card h1 {
+    margin-top: 10px;
+    font-size: 33px;
+  }
+  .buttonz .btn {
+    padding: 2px 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+  }
+  .buttonz a {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  h3 {
+    letter-spacing: 2px;
+    font-size: 17px;
+  }
+  .card {
+    height: 33vh;
   }
 }
