@@ -354,6 +354,7 @@ a span {
     grid-template-areas: "card card" "UI web" "face face";
   }
 }
+
 @media screen and (max-width: 800px) {
   .main-container {
     height: 99vh;
@@ -400,7 +401,7 @@ a span {
     right: auto;
     position: absolute;
     top: 50%;
-    animation: cradle 15s infinite;
+    animation: cradle 20s infinite;
     -ms-transform: rotate(4deg) translateY(-50%);
     transform: rotate(4deg) translateY(-50%);
   }
@@ -410,6 +411,23 @@ a span {
     width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card h1 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  .buttonz .btn {
+    padding: 2px 12px;
+    font-size: 14px;
+    border-radius: 15px;
+  }
+  .buttonz a {
+    font-size: 16px;
   }
 }
 
