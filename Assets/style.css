@@ -225,7 +225,7 @@ a span {
     color: #00372a;
   }
 }
-@media screen and (min-width: 1101px) and (max-width: 1300px) {
+@media screen and (min-width: 1120px) and (max-width: 1300px) {
   .card {
     width: 48vw;
   }
@@ -264,7 +264,7 @@ a span {
     grid-template-areas: "face face face UI" "face face face card" "face face face web";
   }
 }
-@media screen and (min-width: 1051px) and (max-width: 1100px) {
+@media screen and (min-width: 1050px) and (max-width: 1120px) {
   .card {
     width: 45vw;
   }
@@ -303,7 +303,7 @@ a span {
     grid-template-areas: "face face face UI" "face face face card" "face face face web";
   }
 }
-@media screen and (min-width: 801px) and (max-width: 1050px) {
+@media screen and (min-width: 800px) and (max-width: 1050px) {
   h1 {
     line-height: 90%;
   }
