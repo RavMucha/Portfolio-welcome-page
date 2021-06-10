@@ -10,7 +10,7 @@ body {
   color: #84eed5;
   background-color: #00372a;
   -webkit-animation: hue 60s infinite;
-          animation: hue 60s infinite;
+  animation: hue 60s infinite;
 }
 .main-container {
   height: 100vh;
@@ -28,6 +28,10 @@ body {
 }
 .card {
   grid-area: card;
+  font-family: "Poppins", Roboto, monospace;
+  border-radius: 44px 0 0 44px;
+  width: 55vw;
+  background-color: #84eed5;
 }
 .face {
   grid-area: face;
@@ -40,64 +44,64 @@ body {
 @keyframes hue {
   0% {
     -webkit-filter: invert(0%);
-            filter: invert(0%);
+    filter: invert(0%);
     background-color: #00372a;
   }
   20% {
     -webkit-filter: invert(0%);
-            filter: invert(0%);
+    filter: invert(0%);
     background-color: #00372a;
   }
   25% {
     -webkit-filter: invert(90%);
-            filter: invert(90%);
+    filter: invert(90%);
     background-color: #ffffff;
   }
   75% {
     -webkit-filter: invert(90%);
-            filter: invert(90%);
+    filter: invert(90%);
     background-color: #ffffff;
   }
   80% {
     -webkit-filter: invert(0%);
-            filter: invert(0%);
+    filter: invert(0%);
     background-color: #00372a;
   }
   100% {
     -webkit-filter: invert(0%);
-            filter: invert(0%);
+    filter: invert(0%);
     background-color: #00372a;
   }
 }
 @-webkit-keyframes hue {
   0% {
     -webkit-filter: invert(0%);
-            filter: invert(0%);
+    filter: invert(0%);
     background-color: #00372a;
   }
   20% {
     -webkit-filter: invert(0%);
-            filter: invert(0%);
+    filter: invert(0%);
     background-color: #00372a;
   }
   25% {
     -webkit-filter: invert(90%);
-            filter: invert(90%);
+    filter: invert(90%);
     background-color: #ffffff;
   }
   75% {
     -webkit-filter: invert(90%);
-            filter: invert(90%);
+    filter: invert(90%);
     background-color: #ffffff;
   }
   80% {
     -webkit-filter: invert(0%);
-            filter: invert(0%);
+    filter: invert(0%);
     background-color: #00372a;
   }
   100% {
     -webkit-filter: invert(0%);
-            filter: invert(0%);
+    filter: invert(0%);
     background-color: #00372a;
   }
 }
@@ -105,12 +109,6 @@ body {
   display: flex;
   justify-content: center;
   vertical-align: middle;
-}
-.card {
-  font-family: "Poppins", Roboto, monospace;
-  border-radius: 44px 0 0 44px;
-  width: 55vw;
-  background-color: #84eed5;
 }
 header {
   margin: 0;
@@ -191,7 +189,7 @@ a span {
 .UI h1 {
   font-size: 120px;
   -webkit-animation: hueFont 60s infinite;
-          animation: hueFont 60s infinite;
+  animation: hueFont 60s infinite;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -340,7 +338,7 @@ a span {
   }
   .card {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 25vh;
     border-radius: 0;
   }
@@ -381,7 +379,7 @@ a span {
   }
   .card {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 25vh;
     border-radius: 0;
   }
@@ -414,7 +412,7 @@ a span {
     position: absolute;
     top: 50%;
     -webkit-animation: cradle 20s infinite;
-            animation: cradle 20s infinite;
+    animation: cradle 20s infinite;
     transform: rotate(4deg) translateY(-50%);
   }
   .face {
