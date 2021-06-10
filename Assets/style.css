@@ -9,7 +9,8 @@ body {
   font-family: "Reem Kufi", Roboto, monospace;
   color: #84eed5;
   background-color: #00372a;
-  animation: hue 60s infinite;
+  -webkit-animation: hue 60s infinite;
+          animation: hue 60s infinite;
 }
 .main-container {
   height: 100vh;
@@ -34,57 +35,69 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   height: 100vh;
-  width: 70vw;
+  width: 100vh;
 }
 @keyframes hue {
   0% {
-    filter: invert(0%);
+    -webkit-filter: invert(0%);
+            filter: invert(0%);
     background-color: #00372a;
   }
   20% {
-    filter: invert(0%);
+    -webkit-filter: invert(0%);
+            filter: invert(0%);
     background-color: #00372a;
   }
   25% {
-    filter: invert(90%);
+    -webkit-filter: invert(90%);
+            filter: invert(90%);
     background-color: #ffffff;
   }
   75% {
-    filter: invert(90%);
+    -webkit-filter: invert(90%);
+            filter: invert(90%);
     background-color: #ffffff;
   }
   80% {
-    filter: invert(0%);
+    -webkit-filter: invert(0%);
+            filter: invert(0%);
     background-color: #00372a;
   }
   100% {
-    filter: invert(0%);
+    -webkit-filter: invert(0%);
+            filter: invert(0%);
     background-color: #00372a;
   }
 }
 @-webkit-keyframes hue {
   0% {
-    filter: invert(0%);
+    -webkit-filter: invert(0%);
+            filter: invert(0%);
     background-color: #00372a;
   }
   20% {
-    filter: invert(0%);
+    -webkit-filter: invert(0%);
+            filter: invert(0%);
     background-color: #00372a;
   }
   25% {
-    filter: invert(90%);
+    -webkit-filter: invert(90%);
+            filter: invert(90%);
     background-color: #ffffff;
   }
   75% {
-    filter: invert(90%);
+    -webkit-filter: invert(90%);
+            filter: invert(90%);
     background-color: #ffffff;
   }
   80% {
-    filter: invert(0%);
+    -webkit-filter: invert(0%);
+            filter: invert(0%);
     background-color: #00372a;
   }
   100% {
-    filter: invert(0%);
+    -webkit-filter: invert(0%);
+            filter: invert(0%);
     background-color: #00372a;
   }
 }
@@ -106,7 +119,6 @@ header {
   background-color: #84eed5;
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 .buttonz {
@@ -178,11 +190,11 @@ a span {
 .web h1,
 .UI h1 {
   font-size: 120px;
-  animation: hueFont 60s infinite;
+  -webkit-animation: hueFont 60s infinite;
+          animation: hueFont 60s infinite;
   margin: 0;
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 @keyframes hueFont {
@@ -401,15 +413,15 @@ a span {
     right: auto;
     position: absolute;
     top: 50%;
-    animation: cradle 20s infinite;
-    -ms-transform: rotate(4deg) translateY(-50%);
+    -webkit-animation: cradle 20s infinite;
+            animation: cradle 20s infinite;
     transform: rotate(4deg) translateY(-50%);
   }
   .face {
     box-shadow: inset -3px -3px 1px #84eed5, inset 3px 0 1px #84eed5;
     background-size: contain;
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vw;
     aspect-ratio: 1 / 1;
   }
 }
@@ -428,6 +440,13 @@ a span {
   }
   .buttonz a {
     font-size: 16px;
+  }
+  .face {
+    box-shadow: inset -3px -3px 1px #84eed5, inset 3px 0 1px #84eed5;
+    background-size: contain;
+    width: 100vw;
+    height: 100vw;
+    aspect-ratio: 1 / 1;
   }
 }
 
@@ -452,6 +471,13 @@ a span {
   }
   .card {
     height: 33vh;
+  }
+  .face {
+    box-shadow: inset -3px -3px 1px #84eed5, inset 3px 0 1px #84eed5;
+    background-size: contain;
+    width: 100vw;
+    height: 100vw;
+    aspect-ratio: 1 / 1;
   }
 }
 
