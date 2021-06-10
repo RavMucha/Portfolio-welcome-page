@@ -353,7 +353,7 @@ a span {
   .face {
     box-shadow: inset -3px -3px 1px #84eed5, inset 3px 0 1px #84eed5;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
   }
   .main-container {
     height: 150vh;
@@ -424,30 +424,6 @@ a span {
   }
 }
 
-@media screen and (max-width: 350px) {
-  .card h1 {
-    font-size: 35px;
-  }
-  h3 {
-    font-size: 19px;
-  }
-  .buttonz .btn {
-    padding: 2px 12px;
-    font-size: 14px;
-    border-radius: 15px;
-  }
-  .buttonz a {
-    font-size: 16px;
-  }
-  .face {
-    box-shadow: inset -3px -3px 1px #84eed5, inset 3px 0 1px #84eed5;
-    background-size: contain;
-    width: 100vw;
-    height: 100vw;
-    aspect-ratio: 1 / 1;
-  }
-}
-
 @media screen and (max-height: 530px) and (max-width: 800px) {
   .card h1 {
     margin-top: 10px;
@@ -469,6 +445,30 @@ a span {
   }
   .card {
     height: 33vh;
+  }
+  .face {
+    box-shadow: inset -3px -3px 1px #84eed5, inset 3px 0 1px #84eed5;
+    background-size: contain;
+    width: 100vw;
+    height: 100vw;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .card h1 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  .buttonz .btn {
+    padding: 2px 12px;
+    font-size: 14px;
+    border-radius: 15px;
+  }
+  .buttonz a {
+    font-size: 16px;
   }
   .face {
     box-shadow: inset -3px -3px 1px #84eed5, inset 3px 0 1px #84eed5;
